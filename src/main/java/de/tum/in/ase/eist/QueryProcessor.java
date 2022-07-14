@@ -17,6 +17,15 @@ public class QueryProcessor {
         else if (query.contains("what is 14 plus 11")){
     return"25";
         }
+        else if (query.contains("plus")){
+            String[] helper = query.split(" ");
+            String a = helper[1];
+            String b = helper [4];
+            int c = Integer.valueOf(a) + Integer.valueOf(b);
+            return Integer.toString(c);
+
+
+        }
         else  {
             return "";
         }
