@@ -19,7 +19,7 @@ public class QueryProcessor {
         }
         else if (query.contains("plus")){
             String[] helper = query.split(" ");
-            String a = helper[1];
+            String a = helper[2];
             String b = helper [4];
             int c = Integer.valueOf(a) + Integer.valueOf(b);
             return Integer.toString(c);
