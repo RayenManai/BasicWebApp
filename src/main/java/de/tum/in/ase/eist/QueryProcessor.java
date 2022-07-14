@@ -23,8 +23,13 @@ public class QueryProcessor {
             String b = helper [4];
             int c = Integer.valueOf(a) + Integer.valueOf(b);
             return Integer.toString(c);
-
-
+        }
+        else if (query.contains("largest")){
+            String[] helper = query.split(" ");
+            String a = helper[2];
+            String b = helper [4];
+            int c = Integer.valueOf(a) + Integer.valueOf(b);
+            return Integer.toString(c);
         }
         else  {
             return "";
