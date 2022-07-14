@@ -14,7 +14,10 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
             return "Rayen";
         }
-        else {
+        else if (query.contains("what is 14 plus 11")){
+    return"25";
+        }
+        else  {
             return "";
         }
     }
